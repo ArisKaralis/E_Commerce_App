@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My E-commerce Site{% endblock %}</title>
+    <!-- Add any common CSS files or styles here -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Add common navigation elements, such as links to different pages or sections of your site -->
+
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- Content from child templates will be inserted here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Add common footer elements, such as copyright notice or contact information -->
+        <p>&copy; 2023 My E-commerce Site. All rights reserved.</p>
+    </footer>
+
+    <!-- Add any common JavaScript files or scripts here -->
+    <!-- <script src="{% static 'js/script.js' %}"></script> -->
+</body>
+</html>
